@@ -1,0 +1,22 @@
+<!doctype html>
+<!-- {{ pkg.name }} v{{ pkg.version }} | {{ pkg.license }} | {{ pkg.author | safe }} -->
+<html class="no-js" lang="{{ section.appliedLocale }}">
+<head>
+  <meta charset="utf-8">
+  <title>{{ (title + ' | ' if title) | safe }}{{ site.title }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% block SEO %}{% endblock %}
+  <link rel="shortcut icon" href="/images/favicon-32x32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="/css/styles.min.css">
+  <meta name="theme-color" content="#DEE354">
+</head>
+<body class="container mx-auto max-w-6xl text-sm md:text-base lg:text-lg">
+
+{% block CONTENT %}{{ content | safe }}{% endblock %}
+
+  <!-- <script src="/js/scripts.min.js" type="module"></script> -->
+</body>
+</html>

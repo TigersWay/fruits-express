@@ -1,0 +1,5 @@
+site:
+  title: Fruits Express
+  description: Simple sample with Eleventy & TailwindCSS
+
+layout: base.njk

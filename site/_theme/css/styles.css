@@ -1,0 +1,16 @@
+@import 'tailwindcss/base';
+@import './fonts-sarabun.css';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  html, body {@apply h-full;}
+}
+
+@layer components {
+  a[disabled] {@apply pointer-events-none opacity-50;}
+}
+
+@layer utilities {
+  pre.Eleventy {@apply font-mono text-xs p-1 bg-gray-100;}
+}

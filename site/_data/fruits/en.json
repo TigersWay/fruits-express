@@ -1,0 +1,86 @@
+[
+  {
+    "id": "banana",
+    "title": "Eating bananas from both sides",
+    "image": "/images/banana.jpg",
+    "price": 80,
+    "content": "Proin et risus sodales urna posuere finibus. In elementum lorem risus, nec mattis tortor sollicitudin ac. Etiam suscipit dignissim elit, eget vehicula lectus. Donec in faucibus metus. Donec lacinia at massa eget elementum. Donec dictum lacinia lectus, ac accumsan ante vulputate vel. Quisque quis sapien convallis, ornare sem pellentesque, laoreet nisl. Maecenas eleifend diam in enim vulputate eleifend. Vestibulum fermentum."
+  },
+  {
+    "id": "mango",
+    "title": "Rice & Mangos",
+    "image": "/images/mango.jpg",
+    "price": 140,
+    "content": "In pulvinar tincidunt urna sed ullamcorper. Suspendisse potenti. Etiam non turpis consequat, lacinia nisi ut, aliquet arcu. Mauris finibus mattis nibh, a venenatis felis vulputate dapibus. Donec lobortis, ante in varius bibendum, mauris diam cursus nunc, sit amet feugiat justo nulla vitae odio. Donec eget risus ligula. Pellentesque erat urna, sagittis sit amet metus non."
+  },
+  {
+    "id": "peach",
+    "title": "Peaches in Summer",
+    "image": "/images/peach.jpg",
+    "price": 260,
+    "content": "Phasellus scelerisque nisl non pharetra finibus. Pellentesque dignissim ante a nisl euismod, non euismod tortor convallis. Phasellus ante arcu, convallis vel ultricies sodales, feugiat quis est. Quisque eget pulvinar odio. Proin volutpat porttitor magna. Nam eu purus ac massa tincidunt tristique a vel ante. Ut ac luctus mi. Donec pulvinar turpis nec quam lobortis, eu sagittis neque blandit. Curabitur sodales commodo orci."
+  },
+  {
+    "id": "lemon",
+    "title": "Home made Lemonade",
+    "image": "/images/lemon.jpg",
+    "price": 70,
+    "content": "Aliquam cursus nunc malesuada mi luctus, sit amet commodo augue iaculis. Nam nec erat cursus, porttitor libero non, ultricies lectus. Suspendisse velit augue, accumsan in ultricies in, malesuada vitae sapien. Vestibulum venenatis condimentum leo vel laoreet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos."
+  },
+  {
+    "id": "pomelo",
+    "title": "Pomelos, tea, just a breakfast",
+    "image": "/images/pomelo.jpg",
+    "price": 240,
+    "content": "Donec varius tellus ac dui commodo convallis. Curabitur ultrices velit magna, a maximus eros pulvinar et. Sed neque ex, feugiat sit amet orci eu, tempus euismod leo. In lacus purus, fermentum eget tincidunt vel, pulvinar eu ex. Etiam a eros at mauris lacinia finibus nec luctus leo. Aenean efficitur lectus vel."
+  },
+  {
+    "id": "apple",
+    "title": "Cute apple on a shelf",
+    "image": "/images/apple.jpg",
+    "price": 60,
+    "content": "Integer eleifend risus sagittis vestibulum condimentum. Vestibulum cursus vehicula nulla, vel iaculis odio varius non. Mauris sed ex porta, faucibus odio eget, tristique odio. Fusce id semper nunc. Integer porttitor ultricies felis a eleifend. Phasellus venenatis dui sit amet nunc posuere dapibus. In lobortis augue vel tortor aliquam volutpat. Nunc ut elit sodales."
+  },
+  {
+    "id": "lime",
+    "title": "Mint, Lime and Rum",
+    "image": "/images/lime.jpg",
+    "price": 60,
+    "content": "Ut placerat, nisi quis finibus eleifend, tellus quam commodo eros, eget imperdiet risus magna in augue. Phasellus ac fermentum ligula, in feugiat est. Morbi cursus gravida nulla. Donec sit amet neque vel velit tempor dapibus dictum id lectus. Aenean et nibh quis lorem porta vestibulum. Mauris cursus."
+  },
+  {
+    "id": "kiwi",
+    "title": "Kiwi without feathers",
+    "image": "/images/kiwi.jpg",
+    "price": 125,
+    "content": "In in justo vel purus semper dignissim. Quisque efficitur consectetur sapien, eget sagittis tellus mattis sit amet. Sed rhoncus enim et ante gravida tincidunt. Suspendisse at dolor at nibh rhoncus volutpat ut eu nisi. Donec tincidunt justo eget convallis interdum. Cras pulvinar leo vel enim volutpat, ac convallis metus egestas. Aenean."
+  },
+  {
+    "id": "lychee",
+    "title": "Princess Lychee",
+    "image": "/images/lychee.jpg",
+    "price": 90,
+    "content": "Vivamus eu iaculis ipsum, at maximus ligula. Curabitur et nunc nunc. Nam felis nisl, mattis eu tincidunt at, commodo sit amet eros. Nullam convallis diam non lorem feugiat scelerisque. Donec fermentum, turpis vitae dictum mattis, enim lacus porta nibh, at euismod nunc turpis id orci. Quisque maximus facilisis dui."
+  },
+  {
+    "id": "fig",
+    "title": "Three figs and a tree",
+    "image": "/images/fig.jpg",
+    "price": 190,
+    "content": "Vivamus nec orci hendrerit ligula tincidunt egestas non quis lorem. Pellentesque mollis cursus est eget imperdiet. Aliquam luctus tellus in nunc molestie, vitae rutrum lacus efficitur. Quisque justo mi, pulvinar eu tempor non, suscipit vehicula ligula. Cras rhoncus semper justo nec laoreet. In augue nunc, molestie pulvinar pellentesque semper, sollicitudin pulvinar lacus. Nam cursus dolor sit amet lorem. "
+  },
+  {
+    "id": "mandarin",
+    "title": "Mandarin but no seeds",
+    "image": "/images/mandarin.jpg",
+    "price": 210,
+    "content": "Morbi sit amet ullamcorper purus, sed gravida leo. Phasellus accumsan pulvinar ipsum, vel sodales quam fringilla non. Sed maximus orci molestie neque sollicitudin, sed sollicitudin sem vulputate. Aenean hendrerit, nisl vel convallis tincidunt, arcu massa tempus leo, in consectetur lectus tortor eu ex. Cras vitae suscipit magna. Morbi sed mauris nisi. Aenean."
+  },
+  {
+    "id": "pear",
+    "title": "Red, brown or green but always Pears",
+    "image": "/images/pear.jpg",
+    "price": 205,
+    "content": "Nunc non urna venenatis, consectetur metus eu, blandit sapien. Donec elementum, augue quis condimentum tincidunt, est dui iaculis neque, eget vestibulum nulla ex eget sapien. Sed finibus pellentesque risus, et laoreet tellus. Maecenas quis libero ut tellus vehicula interdum vel eget sapien. Fusce consequat nunc quis leo. "
+  }
+]
