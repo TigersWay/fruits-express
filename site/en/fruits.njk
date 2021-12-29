@@ -10,7 +10,7 @@ eleventyComputed:
 <div class="grid md:grid-cols-2 gap-4 border shadow">
   <div class="aspect-w-16 aspect-h-9"><img class="object-contain" src="{{ fruit.image }}" alt="{{ fruit.title }}" width="400" height="225"></div>
   <div class="self-center prose prose-sm md:prose lg:prose-lg max-w-none p-4">
-    <h4 class="font-bold mb-2">{{ fruit.title }}</h4>
+    <h2 class="font-bold mb-2">{{ fruit.title }}</h2>
     <p>{{ fruit.content }}</p>
     <p class="font-bold text-xl mt-2">{{ fruit.price | price }}</p>
   </div>

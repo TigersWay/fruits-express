@@ -3,7 +3,7 @@
   <a class="pt-2 border shadow" href="{{ [section.languagePrefix, 'fruit', ( fruit.id | slug )] | joinUrl | url }}">
     <div class="aspect-w-16 aspect-h-9"><img class="object-contain" src="{{ fruit.image | url }}" alt="{{ fruit.title }}" width="400" height="225"></div>
     <div class="prose prose-sm md:prose lg:prose-lg p-4">
-      <h4 class="text-center">{{ fruit.title }}</h4>
+      <h2 class="text-center">{{ fruit.title }}</h2>
       <p class="font-bold text-xl text-center mt-2">{{ fruit.price | price }}</p>
     </div>
   </a>
