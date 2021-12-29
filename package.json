@@ -5,7 +5,7 @@
     "eleventy",
     "tailwindcss"
   ],
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "license": "MIT",
   "author": "Ben Michaud <ben@tigersway.net>",
   "scripts": {
@@ -18,7 +18,7 @@
     "build:tailwind": "tailwind --input ./site/_theme/css/styles.css --output ./public/css/styles.min.css --postcss --minify"
   },
   "dependencies": {
-    "@11ty/eleventy": "v1.0.0-canary.46",
+    "@11ty/eleventy": ">=1.0.0-canary.49 || ^1.0.0",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "autoprefixer": "^10.4.0",
     "fast-glob": "^3.2.7",
