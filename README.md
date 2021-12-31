@@ -2,8 +2,9 @@
 
 Simple sample with Eleventy & TailwindCSS
 
-**WIP/ToDos**
+[![Netlify](https://img.shields.io/badge/Netlify--none?style=social&logo=netlify)](https://fruits-express.netlify.app/)
 
-**v1.0.0-alpha**
+
+**v1.0.0**
 - Eleventy v1.x
 - TailwindCSS v3.x
