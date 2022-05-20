@@ -1,0 +1,7 @@
+    <a class="pt-2 border shadow" href="#">
+      <div class="aspect-w-16 aspect-h-9"><img class="object-contain" src="{{ fruit.image | cdn }}" alt="{{ fruit.title[section.path] }}" width="500" height="400"></div>
+      <div class="p-4 prose-sm prose md:prose lg:prose-lg">
+        <h2 class="text-center">{{ fruit.title[section.path] }}</h2>
+        <p class="mt-2 text-xl font-bold text-center">{{ fruit.price | price }}</p>
+      </div>
+    </a>

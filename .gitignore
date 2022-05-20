@@ -1,6 +1,7 @@
 # Windows & helpers, IDE & Personal preferences
 desktop.ini
 folder.ico
+.keep/
 .vscode/
 
 # Dependency files & directories (p/npm)
@@ -10,4 +11,5 @@ pnpm-lock.yaml
 
 # Project's specific file(s)
 public/
+build/
 .env*

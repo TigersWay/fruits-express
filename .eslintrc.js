@@ -1,19 +1,16 @@
 module.exports = {
-  env: {
-    es6: true,
-    node: true
+  "env": {
+    "es2021": true,
+    "node": true,
+    "browser": true
   },
-  extends: 'eslint:recommended',
+  "extends": ["eslint:recommended"],
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: 2018
+    ecmaVersion: "latest"
   },
   rules: {
-    indent: ['error', 2, {
-      "SwitchCase": 1
-    }],
-    semi: ['error', 'always'],
     'linebreak-style': ['error', 'unix'],
-    'no-console': 'off',
+    semi: ['error', 'always']
   }
 };

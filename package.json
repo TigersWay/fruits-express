@@ -1,36 +1,47 @@
 {
   "name": "fruits-express",
-  "description": "Simple sample with Eleventy & TailwindCSS",
+  "description": "Simple data-oriented & multi-language starter with Eleventy & TailwindCSS",
   "keywords": [
     "eleventy",
+    "11ty",
+    "starter",
     "tailwindcss"
   ],
-  "version": "1.0.0",
+  "version": "2.0.0",
   "license": "MIT",
   "author": "Ben Michaud <ben@tigersway.net>",
   "scripts": {
-    "start": "NODE_ENV=development run-p dev:*",
+    "start": "NODE_ENV=development concurrently -n dev: -c green,cyan,yellow npm:dev:* --kill-others",
     "prestart": "rm -rf ./public",
-    "dev:11ty": "eleventy --serve --config eleventy.config.js --quiet",
-    "dev:tailwind": "tailwind --input ./site/_theme/css/styles.css --output ./public/css/styles.min.css --postcss --watch",
-    "build": "NODE_ENV=production run-p build:*",
-    "build:11ty": "eleventy --config eleventy.config.js --quiet",
-    "build:tailwind": "tailwind --input ./site/_theme/css/styles.css --output ./public/css/styles.min.css --postcss --minify"
-  },
-  "dependencies": {
-    "@11ty/eleventy": ">=1.0.0-canary.49 || ^1.0.0",
-    "@tailwindcss/aspect-ratio": "^0.4.0",
-    "autoprefixer": "^10.4.1",
-    "fast-glob": "^3.2.7",
-    "js-yaml": "^4.1.0",
-    "nunjucks": "^3.2.3",
-    "postcss": "^8.4.5",
-    "postcss-import": "^14.0.2",
-    "tailwindcss": "^3.0.8"
+    "dev:11ty": "eleventy --serve --config eleventy.config.js",
+    "dev:css": "tailwind --input ./site/_theme/css/styles.css --output ./public/css/styles.min.css --postcss --watch",
+    "dev:js": "esbuild js/scripts.min=site/_theme/js/scripts.js --outdir=public --bundle --watch",
+    "build": "NODE_ENV=production concurrently -n build: -c green,cyan,yellow npm:build:* --kill-others-on-fail",
+    "prebuild": "rm -rf ./build",
+    "build:11ty": "eleventy --output build --config eleventy.config.js --quiet",
+    "build:css": "tailwind --input ./site/_theme/css/styles.css --output ./build/css/styles.min.css --postcss --minify",
+    "build:js": "esbuild js/scripts.min=site/_theme/js/scripts.js --outdir=build --bundle --minify",
+    "prod-preview": "npx http-server build -o --gzip --brotli",
+    "upload-cloudinary": "qcu -p $npm_package_name 'site/static:images/*.jpg' 'site/_data:images/**/*'"
   },
   "devDependencies": {
-    "dotenv": "^10.0.0",
-    "npm-run-all": "^4.1.5",
-    "string-kit": "^0.16.0"
+    "@11ty/eleventy": "2.0.0-canary.11",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.2",
+    "autoprefixer": "^10.4.7",
+    "concurrently": "^7.2.0",
+    "dotenv": "^16.0.0",
+    "esbuild": "^0.14.39",
+    "fast-glob": "^3.2.11",
+    "html-minifier": "^4.0.0",
+    "js-yaml": "^4.1.0",
+    "markdown-it": "^13.0.0",
+    "markdown-it-link-attributes": "^4.0.0",
+    "postcss": "^8.4.13",
+    "postcss-import": "^14.1.0",
+    "quick-cloudinary-uploader": "^1.0.1",
+    "serve-static": "^1.15.0",
+    "string-kit": "^0.16.3",
+    "tailwindcss": "^3.0.24"
   }
 }

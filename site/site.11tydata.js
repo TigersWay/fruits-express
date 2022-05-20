@@ -1,17 +1,15 @@
-const permalink = (filePathStem, prefix) => {
-  let segments = filePathStem.replace(/^\/|\/$/g, '').split('/');
+require('dotenv').config();
 
-  if (segments[segments.length-1] == 'index') segments.pop(); // Get rid of last 'index' segment
-
-  if (/^[a-z]{2}(?:-[a-zA-Z]{2})?$/.test(segments[0])) segments[0]=prefix; // Change folder prefix to url prefix
-
-  return '/' + segments.join('/') + '/';
-};
+const {relativeUrl} = require('./_filters/urls');
 
 module.exports = {
 
+  site: {
+    url: process.env.SITE_URL || 'https://fruits-express.com'
+  },
+
   eleventyComputed: {
-    permalink: data => data.permalink ? data.permalink : permalink(data.page.filePathStem, data.section.languagePrefix)
+    permalink: data => data.permalink ? data.permalink : relativeUrl(data.page.filePathStem, data?.section?.prefix)
   }
 
 };

@@ -1,5 +1,5 @@
 site:
   title: Fruits Express
-  description: Simple sample with Eleventy & TailwindCSS
+  description: Simple data-oriented & multi-language starter with Eleventy & TailwindCSS
 
 layout: base.njk

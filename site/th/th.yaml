@@ -1,3 +1,6 @@
 section:
-  languagePrefix: th
+  path: th
+  prefix: /th
   appliedLocale: th
+
+tags: [th]
