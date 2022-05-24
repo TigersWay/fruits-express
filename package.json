@@ -13,7 +13,7 @@
   "scripts": {
     "start": "NODE_ENV=development concurrently -n dev: -c green,cyan,yellow npm:dev:* --kill-others",
     "prestart": "rm -rf ./public",
-    "dev:11ty": "eleventy --serve --config eleventy.config.js",
+    "dev:11ty": "eleventy --serve --config eleventy.config.js --quiet",
     "dev:css": "tailwind --input ./site/_theme/css/styles.css --output ./public/css/styles.min.css --postcss --watch",
     "dev:js": "esbuild js/scripts.min=site/_theme/js/scripts.js --outdir=public --bundle --watch",
     "build": "NODE_ENV=production concurrently -n build: -c green,cyan,yellow npm:build:* --kill-others-on-fail",
@@ -30,6 +30,7 @@
     "@tailwindcss/typography": "^0.5.2",
     "autoprefixer": "^10.4.7",
     "concurrently": "^7.2.0",
+    "dayjs": "^1.11.2",
     "dotenv": "^16.0.0",
     "esbuild": "^0.14.39",
     "fast-glob": "^3.2.11",

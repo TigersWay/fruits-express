@@ -5,7 +5,7 @@ permalink: "{{ section.prefix }}/sitemap.xml"
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- {{ pkg.name }} v{{ pkg.version }} | {{ pkg.license }} | {{ pkg.author | safe }} -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{% for item in collections[section.path] | sort(attribute='page.url') %}
-  <url><loc>{{ item.url | absoluteUrl | url }}</loc><lastmod>{{ item.date | dateISO }}</lastmod></url>
+{% for item in collections[section.path] | sort(attribute='url') %}
+  <url><loc>{{ item.url | absoluteUrl | url }}</loc><lastmod>{{ item.data.fruit.updated | dateISO }}</lastmod></url>
 {% endfor %}
 </urlset>

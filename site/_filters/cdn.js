@@ -4,13 +4,13 @@ const none = (imagePath, width, height) => `${imagePath}`; // eslint-disable-lin
 
 
 if (process.env.CLOUDINARY_CDN_URL) {
-console.log('cloudinary');
+
   module.exports = {
     cdn: (imagePath, width, height) => cloudinary(imagePath, width, height)
   };
 
 } else {
-console.log('none');
+
   module.exports = {
     cdn: (imagePath, width, height) => none(imagePath, width, height)
   };

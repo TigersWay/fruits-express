@@ -3,8 +3,8 @@ title: Administration
 layout: html.njk
 eleventyExcludeFromCollections: true
 ---
-  <section class="container px-4 py-2 mx-auto my-4 prose-sm prose border max-w-7xl">
-    <details><summary><h2 class="inline-block m-0">Fruits</h2></summary>
+  <section class="container px-4 py-2 mx-auto my-4 border max-w-7xl">
+    <details><summary><h2 class="inline-block text-2xl font-bold">Fruits</h2></summary>
       <ul class="space-y-1 list-none">
       {% for fruit in fruits | sort(attribute='id') %}
         <li>
@@ -17,17 +17,11 @@ eleventyExcludeFromCollections: true
     </details>
   </section>
 
-  <section class="container px-4 py-2 mx-auto my-4 prose-sm prose border max-w-7xl">
-    <details><summary><h2 class="inline-block m-0">Collections</h2></summary>
-    {{ collections  | debug(3) | safe }}
-    </details>
-  </section>
-
-  <section class="container px-4 py-2 mx-auto my-4 prose-sm prose border max-w-7xl">
-    <details><summary><h2 class="inline-block m-0">Tests</h2></summary>
+  <section class="container px-4 py-2 mx-auto my-4 border max-w-7xl">
+    <details><summary><h2 class="inline-block text-2xl font-bold">Collections.all (loop)</h2></summary>
       <ul class="space-y-1 list-none">
       {% for item in collections.all %}
-        <li>{{ item  | debug(2, true, ['template','templateContent', '_templateContent']) | safe }}</li>
+        <li>{{ item  | debug(2) | safe }}</li>
       {% endfor %}
       </ul>
     </details>
