@@ -1,0 +1,22 @@
+---
+layout: base.njk
+pagination:
+  data: fruits
+  size: 1
+  alias: fruit
+  addAllPagesToCollections: true
+permalink: "{{ ('/fruit/' + ( fruit.id | slugify )) | relativeUrl }}"
+eleventyComputed:
+  title: "{{ fruit.title[section.path] }}"
+---
+    <div class="grid gap-4 border shadow md:grid-cols-2">
+      <div class="aspect-w-16 aspect-h-9"><img class="object-contain" src="{{ fruit.image }}" alt="{{ fruit.title[section.path] }}" width="500" height="400"></div>
+      <div class="flex flex-col justify-between gap-4 p-4 xself-center">
+        <h2 class="text-2xl font-bold">{{ fruit.title[section.path] }}</h2>
+        <div class="markdown">{{ fruit.content[section.path] | markdown | safe }}</div>
+        <div class="flex justify-between">
+          <p class="text-2xl font-bold">{{ fruit.price | price }}</p>
+          <p class="italic text-[80%] self-end">{{ 'Updated' | i18n }}: <span>{{ fruit.updated | dateFormat('LL') }}</span></p>
+        </div>
+      </div>
+    </div>

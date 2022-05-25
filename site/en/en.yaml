@@ -1,3 +1,8 @@
 section:
-  languagePrefix: ''
+  path: en
+  prefix: ''
   appliedLocale: en-US
+
+tags: [en]
+
+dict:

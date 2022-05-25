@@ -1,0 +1,28 @@
+---
+title: Administration
+layout: html.njk
+eleventyExcludeFromCollections: true
+---
+  <section class="container px-4 py-2 mx-auto my-4 border max-w-7xl">
+    <details><summary><h2 class="inline-block text-2xl font-bold">Fruits</h2></summary>
+      <ul class="space-y-1 list-none">
+      {% for fruit in fruits | sort(attribute='id') %}
+        <li>
+          <img class="inline-block w-12 h-10 rounded-full ring-2 ring-white" src="{{ fruit.image }}" alt="{{ fruit.id }}">
+          <a href="{{ fruit.id | slugify }}" target="_blank">{{ fruit.title.en }} / {{ fruit.title.th }}</a>
+          <span>{{ fruit.price }}</span>
+        </li>
+      {% endfor %}
+      </ul>
+    </details>
+  </section>
+
+  <section class="container px-4 py-2 mx-auto my-4 border max-w-7xl">
+    <details><summary><h2 class="inline-block text-2xl font-bold">Collections.all (loop)</h2></summary>
+      <ul class="space-y-1 list-none">
+      {% for item in collections.all %}
+        <li>{{ item  | debug(2) | safe }}</li>
+      {% endfor %}
+      </ul>
+    </details>
+  </section>
