@@ -58,7 +58,8 @@ module.exports = (eleventyConfig) => {
         return require('html-minifier').minify(content, {
           useShortDoctype: true,
           minifyJS: true,
-          collapseWhitespace: true
+          collapseWhitespace: true,
+          keepClosingSlash: true
         });
       }
       return content;
