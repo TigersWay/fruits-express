@@ -2,14 +2,23 @@
 
 Simple data-oriented & multi-language starter with Eleventy & TailwindCSS
 
-Branches: ![GitHub package.json version](https://img.shields.io/github/package-json/v/tigersway/fruits-express?label=main&style=flat-square) ![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/tigersway/fruits-express/dev?label=dev&style=flat-square)
+<!--
+Branches:
+![GitHub package.json version](https://img.shields.io/github/package-json/v/tigersway/fruits-express?label=main&style=flat-square)
+![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/tigersway/fruits-express/dev?label=dev&style=flat-square)
+-->
 
 Demo:
 [![Netlify](https://img.shields.io/badge/Netlify--none?style=social&logo=netlify)](https://fruits-express.netlify.app)
 [![Cloudflare](https://img.shields.io/badge/Cloudflare_pages--none?style=social&logo=cloudflare)](https://fruits-express.pages.dev)
+[![Render](https://img.shields.io/badge/render--none?style=social&logo=eleventy&logoColor=46e3b7)](https://fruits-express.onrender.com)
+
 
 
 ### CHANGELOG
+
+**v2.0.1**
+- Fix Atom feed
 
 **v2.0.0**
 - Additions & New features
