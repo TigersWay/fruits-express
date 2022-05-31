@@ -1,24 +1,18 @@
-# fruits-express  ![GitHub last commit](https://img.shields.io/github/last-commit/tigersway/fruits-express?style=flat-square) ![GitHub issues](https://img.shields.io/github/issues/tigersway/fruits-express?style=flat-square)
+# fruits-express  ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/tigersway/fruits-express?style=flat-square) ![GitHub last commit](https://img.shields.io/github/last-commit/tigersway/fruits-express?style=flat-square) ![GitHub issues](https://img.shields.io/github/issues/tigersway/fruits-express?style=flat-square) 
 
 Simple data-oriented & multi-language starter with Eleventy & TailwindCSS
-
-<!--
-Branches:
-![GitHub package.json version](https://img.shields.io/github/package-json/v/tigersway/fruits-express?label=main&style=flat-square)
-![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/tigersway/fruits-express/dev?label=dev&style=flat-square)
--->
 
 Demo:
 [![Netlify](https://img.shields.io/badge/Netlify--none?style=social&logo=netlify)](https://fruits-express.netlify.app)
 [![Cloudflare](https://img.shields.io/badge/Cloudflare_pages--none?style=social&logo=cloudflare)](https://fruits-express.pages.dev)
 [![Render](https://img.shields.io/badge/render--none?style=social&logo=eleventy&logoColor=46e3b7)](https://fruits-express.onrender.com)
-
+[![Vercel](https://img.shields.io/badge/vercel--none?style=social&logo=vercel)](https://fruits-express.vercel.app)
 
 
 ### CHANGELOG
 
 **v2.0.1**
-- Fix Atom feed
+- Fix Atom feed (Links & minification)
 
 **v2.0.0**
 - Additions & New features

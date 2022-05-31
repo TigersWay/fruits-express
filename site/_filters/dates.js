@@ -12,6 +12,5 @@ module.exports = {
     return dayjs(date).locale(locale).format(format);
   },
 
-  // dateISO: (date) => new Date(date).toISOString()
   dateISO: (date) => dayjs(date).toISOString()
 };
