@@ -11,6 +11,9 @@ Demo:
 
 ### CHANGELOG
 
+**v2.1.0**
+- Added github-pages demo (great to check the url filter)
+
 **v2.0.1**
 - Fix Atom feed (Links & minification)
 

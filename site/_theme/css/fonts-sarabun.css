@@ -4,7 +4,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local(''), url('/css/fonts/sarabun-v13-thai_latin-ext_latin-regular.woff2') format('woff2');
+  src: local(''), url('./fonts/sarabun-v13-thai_latin-ext_latin-regular.woff2') format('woff2');
 }
 
 /* sarabun-italic - thai_latin-ext_latin */
@@ -13,7 +13,7 @@
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: local(''), url('/css/fonts/sarabun-v13-thai_latin-ext_latin-italic.woff2') format('woff2');
+  src: local(''), url('./fonts/sarabun-v13-thai_latin-ext_latin-italic.woff2') format('woff2');
 }
 
 /* sarabun-700 - thai_latin-ext_latin */
@@ -22,7 +22,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local(''), url('/css/fonts/sarabun-v13-thai_latin-ext_latin-700.woff2') format('woff2');
+  src: local(''), url('./fonts/sarabun-v13-thai_latin-ext_latin-700.woff2') format('woff2');
 }
 
 /* sarabun-700italic - thai_latin-ext_latin */
@@ -31,5 +31,5 @@
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: local(''), url('/css/fonts/sarabun-v13-thai_latin-ext_latin-700italic.woff2') format('woff2');
+  src: local(''), url('./fonts/sarabun-v13-thai_latin-ext_latin-700italic.woff2') format('woff2');
 }
