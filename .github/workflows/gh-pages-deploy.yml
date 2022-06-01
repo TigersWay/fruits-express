@@ -2,6 +2,11 @@ name: gh-pages-deploy
 on: [push]
 permissions:
   contents: write
+
+env:
+  SITE_URL: https://tigersway.github.io/fruits-express
+  CLOUDINARY_CDN_URL: https://res.cloudinary.com/tigersway
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
