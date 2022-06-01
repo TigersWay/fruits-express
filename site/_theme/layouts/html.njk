@@ -7,17 +7,17 @@
   <title>{{ (title + ' | ' if title) | safe }}{{ site.title }}</title>
   <meta name="description" content="{{ description or site.description }}">
 {% block SEO %}{% endblock %}
-  <link rel="shortcut icon" href="/images/favicon-32x32.png" sizes="32x32">
-  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="{{ '/images/favicon-32x32.png' | url }}" sizes="32x32">
+  <link rel="apple-touch-icon" href="{{ '/images/apple-touch-icon.png' | url }}">
 
-  <link rel="stylesheet" href="/css/styles.min.css">
+  <link rel="stylesheet" href="{{ '/css/styles.min.css' | url }}">
   <meta name="theme-color" content="#DEE354">
-  <link rel="alternate" type="application/atom+xml" href="{{ section.prefix }}/feeds.xml">
+  <link rel="alternate" type="application/atom+xml" href="{{ section.prefix | url }}/feeds.xml">
 </head>
 <body class="container max-w-6xl mx-auto text-sm md:text-base lg:text-lg">
 
 {% block CONTENT %}{{ content | safe }}{% endblock %}
 
-  <script src="/js/scripts.min.js" type="module"></script>
+  <script src="{{ '/js/scripts.min.js' | url }}" type="module"></script>
 </body>
 </html>
