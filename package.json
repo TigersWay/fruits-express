@@ -18,7 +18,7 @@
     "dev:js": "esbuild js/scripts.min=site/_theme/js/scripts.js --outdir=public --bundle --watch",
     "build": "NODE_ENV=production concurrently -n build: -c green,cyan,yellow npm:build:* --kill-others-on-fail",
     "prebuild": "rm -rf ./build",
-    "build:11ty": "eleventy --output build --config eleventy.config.js --quiet",
+    "build:11ty": "eleventy --output build --config eleventy.config.js --quiet --pathprefix $PATHPREFIX",
     "build:css": "tailwind --input ./site/_theme/css/styles.css --output ./build/css/styles.min.css --postcss --minify",
     "build:js": "esbuild js/scripts.min=site/_theme/js/scripts.js --outdir=build --bundle --minify",
     "prod-preview": "npx http-server build -o --gzip --brotli",
