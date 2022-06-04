@@ -9,7 +9,7 @@ Demo:
 [![Vercel](https://img.shields.io/badge/vercel--none?style=social&logo=vercel)](https://fruits-express.vercel.app)
 
 
-### Generic builder
+### "Generic builder"
 
 You can use the usual `npm run build` script to generate every configuration you should need (command line or dotenv-cli):
 - `SITE_URL=https://fruits-express.xyz CLOUDINARY_CDN_URL=https://res.cloudinary.com/myaccount npm run build`
