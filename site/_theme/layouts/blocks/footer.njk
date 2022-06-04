@@ -1,5 +1,5 @@
   <footer class="sticky top-[100vh] mt-8 overflow-hidden">
-    <img class="max-w-4xl md:max-w-6xl mx-[50%] -translate-x-[50%]" src="{{ '/images/footer.jpg' | cdn(1280) }}" alt="" width="1280" height="245">
+    <img class="max-w-4xl md:max-w-6xl mx-[50%] -translate-x-[50%]" src="{{ '/images/footer.jpg' | cdn(1280) | url }}" alt="" width="1280" height="245">
     <div class="absolute flex gap-3 p-2 border shadow inset-x-2 xl:inset-x-0 bottom-6 bg-white/80">
       <ul class="inline-flex items-center flex-grow gap-2">
         {% if build.forProduction %}{% else %}

@@ -9,7 +9,23 @@ Demo:
 [![Vercel](https://img.shields.io/badge/vercel--none?style=social&logo=vercel)](https://fruits-express.vercel.app)
 
 
+### Generic builder
+
+You can use the usual `npm run build` script to generate every configuration you should need (command line or dotenv-cli):
+- `SITE_URL=https://fruits-express.xyz CLOUDINARY_CDN_URL=https://res.cloudinary.com/myaccount npm run build`
+- `SITE_URL=https://yourname.github.io PATHPREFIX=fruits-express npm run build`
+- `SITE_URL=https://example.com PATHPREFIX=abcd npm run build`
+
+Available variables are:
+- SITE_URL (default to https://fruits-express.com)
+- CLOUDINARY_CDN_URL (no default)
+- PATHPREFIX (no default)
+
 ### CHANGELOG
+
+**v2.2.0**
+- Added a "Generic builder"
+- Fix images url without CDN
 
 **v2.1.0**
 - Added github-pages demo (great to check the url filter)

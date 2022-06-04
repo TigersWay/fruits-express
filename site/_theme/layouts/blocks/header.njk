@@ -1,5 +1,5 @@
   <header class="relative mb-8 overflow-hidden">
-    <img class="max-w-4xl md:max-w-6xl mx-[50%] -translate-x-[50%]" src="{{ '/images/header.jpg' | cdn(1280) }}" alt="" width="1280" height="245">
+    <img class="max-w-4xl md:max-w-6xl mx-[50%] -translate-x-[50%]" src="{{ '/images/header.jpg' | cdn(1280) | url }}" alt="" width="1280" height="245">
     <div class="absolute flex gap-4 p-2 border shadow inset-x-2 xl:inset-x-0 top-6 bg-white/80">
       <h1 class="flex-grow text-2xl italic font-bold md:text-3xl">
         <a class="flex items-center gap-2" href="{{ (section.prefix + '/') | url }}">
