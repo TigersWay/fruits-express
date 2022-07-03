@@ -44,11 +44,11 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.setNunjucksEnvironmentOptions({trimBlocks: true, lstripBlocks: true});
 
 
-  // Browser-Sync, Dev mode or "Passthrough File Copy"
-  if (process.env.NODE_ENV === 'production') {
+  eleventyConfig.addPassthroughCopy({ 'site/static': '.' });
+  eleventyConfig.addPassthroughCopy({ 'node_modules/@fontsource/sarabun/files/*{latin,thai}-{400,700}*.woff2': 'css/files' });
+  eleventyConfig.addPassthroughCopy({ 'site/_data/images': 'images' });
 
-    eleventyConfig.addPassthroughCopy({ 'site/static': '.' });
-    eleventyConfig.addPassthroughCopy({ 'site/_data/images': 'images' });
+  if (process.env.NODE_ENV === 'production') {
 
     eleventyConfig.ignores.add('site/admin.njk');
 
@@ -63,17 +63,6 @@ module.exports = (eleventyConfig) => {
         });
       }
       return content;
-    });
-
-  } else {
-
-    const serveStatic = require('serve-static');
-
-    eleventyConfig.setServerOptions({
-      middleware: [
-        serveStatic('./site/_data'),
-        serveStatic('./site/static')
-      ],
     });
 
   }

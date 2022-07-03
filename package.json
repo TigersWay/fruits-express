@@ -5,9 +5,10 @@
     "eleventy",
     "11ty",
     "starter",
-    "tailwindcss"
+    "tailwindcss",
+    "fontsource"
   ],
-  "version": "2.2.0",
+  "version": "2.3.0",
   "license": "MIT",
   "author": "Ben Michaud <ben@tigersway.net>",
   "scripts": {
@@ -25,14 +26,15 @@
     "upload-cloudinary": "qcu -p $npm_package_name 'site/static:images/*.jpg' 'site/_data:images/**/*'"
   },
   "devDependencies": {
-    "@11ty/eleventy": "2.0.0-canary.11",
+    "@11ty/eleventy": "2.0.0-canary.12",
+    "@fontsource/sarabun": "^4.5.8",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/typography": "^0.5.2",
     "autoprefixer": "^10.4.7",
-    "concurrently": "^7.2.1",
-    "dayjs": "^1.11.2",
+    "concurrently": "^7.2.2",
+    "dayjs": "^1.11.3",
     "dotenv": "^16.0.1",
-    "esbuild": "^0.14.42",
+    "esbuild": "^0.14.47",
     "fast-glob": "^3.2.11",
     "html-minifier": "^4.0.0",
     "js-yaml": "^4.1.0",
@@ -41,8 +43,7 @@
     "postcss": "^8.4.14",
     "postcss-import": "^14.1.0",
     "quick-cloudinary-uploader": "^1.0.1",
-    "serve-static": "^1.15.0",
-    "string-kit": "^0.16.6",
-    "tailwindcss": "^3.0.24"
+    "string-kit": "^0.17.0",
+    "tailwindcss": "^3.1.4"
   }
 }
