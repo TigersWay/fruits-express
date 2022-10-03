@@ -1,6 +1,12 @@
 require('dotenv').config();
 
-const {relativeUrl} = require('./_filters/urls');
+
+const permalink = (filePathStem, prefix) => {
+  filePathStem = filePathStem
+    .replace(/^(\/.*?)(\/index)?$/, `$1/`) // Delete last segment with `index`
+    .replace(/^\/[^/]*(\/.*)$/, `${prefix}$1`); // replace first segment (folder) with the prefix
+  return filePathStem;
+};
 
 module.exports = {
 
@@ -9,7 +15,7 @@ module.exports = {
   },
 
   eleventyComputed: {
-    permalink: data => data.permalink ? data.permalink : relativeUrl(data.page.filePathStem, data?.section?.prefix)
+    permalink: data => data.permalink ? data.permalink : permalink(data.page.filePathStem, data?.section?.prefix)
   }
 
 };

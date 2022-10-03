@@ -1,8 +1,8 @@
 section:
-  path: en
-  prefix: ''
+  path: &key en
+  prefix: ""
   appliedLocale: en-US
 
-tags: [en]
+tags: [*key]
 
 dict:

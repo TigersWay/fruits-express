@@ -33,6 +33,12 @@ Available variables are:
 
 ### CHANGELOG
 
+**v2.4.0**
+
+- Eleventy 2.0.0-canary.15
+  - `eleventy.config.js` is now the default config file
+  - the new HTML &lt;base&gt; plugin allows us to get rid of the url filter
+
 **v2.3.0**
 
 - Eleventy 2.0.0-canary.12 & "For-free passthrough copy"

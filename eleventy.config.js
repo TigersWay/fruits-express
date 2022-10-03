@@ -1,12 +1,14 @@
 require('dotenv').config();
 
 const
-  { EleventyRenderPlugin } = require('@11ty/eleventy');
+  { EleventyHtmlBasePlugin, EleventyRenderPlugin } = require('@11ty/eleventy');
 
 
 module.exports = (eleventyConfig) => {
 
   // Plugins
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+
   eleventyConfig.addPlugin(EleventyRenderPlugin);
   eleventyConfig.addGlobalData('fragments', './site/_theme/layouts/fragments');
 
@@ -29,24 +31,24 @@ module.exports = (eleventyConfig) => {
     linkify: true,      // Autoconvert URL-like text to links
     typographer: true,  // Enable some language-neutral replacement + quotes beautification
   })
-  .use(require('markdown-it-link-attributes'), {
-    pattern: /^(https?:)?\/\//,
-    attrs: {
-      target: '_blank',
-      rel: 'noopener'
-    }
-  });
+    .use(require('markdown-it-link-attributes'), {
+      pattern: /^(https?:)?\/\//,
+      attrs: {
+        target: '_blank',
+        rel: 'noopener'
+      }
+    });
   eleventyConfig.setLibrary('md', Markdown);
   eleventyConfig.addFilter('markdown', content => Markdown.render(String(content)));
 
 
   // Engine: Nunjucks
-  eleventyConfig.setNunjucksEnvironmentOptions({trimBlocks: true, lstripBlocks: true});
+  eleventyConfig.setNunjucksEnvironmentOptions({ trimBlocks: true, lstripBlocks: true });
 
 
-  eleventyConfig.addPassthroughCopy({ 'site/static': '.' });
+  eleventyConfig.addPassthroughCopy({ 'site/static/': '.' });
   eleventyConfig.addPassthroughCopy({ 'node_modules/@fontsource/sarabun/files/*{latin,thai}-{400,700}*.woff2': 'css/files' });
-  eleventyConfig.addPassthroughCopy({ 'site/_data/images': 'images' });
+  eleventyConfig.addPassthroughCopy({ 'site/_data/images/': 'images' });
 
   if (process.env.NODE_ENV === 'production') {
 
@@ -54,7 +56,7 @@ module.exports = (eleventyConfig) => {
 
     // Transform : html-minifier
     eleventyConfig.addTransform('html-minify', async (content, outputPath) => {
-      if ( outputPath && /(\.html|\.xml)$/.test(outputPath) ) {
+      if (outputPath && /(\.html|\.xml)$/.test(outputPath)) {
         return require('html-minifier').minify(content, {
           useShortDoctype: true,
           minifyJS: true,

@@ -2,7 +2,7 @@
 desktop.ini
 folder.ico
 .keep/
-.vscode/
+# .vscode/
 
 # Dependency files & directories (p/npm)
 node_modules/
