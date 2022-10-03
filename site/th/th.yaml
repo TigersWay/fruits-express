@@ -1,9 +1,9 @@
 section:
-  path: th
+  path: &key th
   prefix: /th
   appliedLocale: th
 
-tags: [th]
+tags: [*key]
 
 dict:
   Updated: แก้ไขล่าสุด

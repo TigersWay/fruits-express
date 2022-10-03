@@ -1,5 +1,5 @@
-      <a class="py-2 border shadow" href="{{ ('/fruit/' + ( fruit.id | slugify )) | relativeUrl | url }}">
-        <div class="aspect-w-16 aspect-h-9"><img class="object-contain" src="{{ fruit.image | cdn | url }}" alt="{{ fruit.title[section.path] }}" width="500" height="400"></div>
+      <a class="py-2 border shadow" href="{{ section.prefix + '/fruit/' + ( fruit.id | slugify ) + '/' }}">
+        <div class="aspect-w-16 aspect-h-9"><img class="object-contain" src="{{ fruit.image | cdn }}" alt="{{ fruit.title[section.path] }}" width="500" height="400"></div>
         <h2 class="text-lg text-center">{{ fruit.title[section.path] }}</h2>
         <p class="mt-2 text-xl font-bold text-center">{{ fruit.price | price }}</p>
       </a>

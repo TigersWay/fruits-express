@@ -6,17 +6,17 @@ permalink: "{{ section.prefix }}/feeds.xml"
 <!-- {{ pkg.name }} v{{ pkg.version }} | {{ pkg.license }} | {{ pkg.author | safe }} -->
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>{{ site.title }}</title>
-  <link href="{{ page.url | url | absoluteUrl }}" rel="self"/>
-  <link href="{{ (section.prefix or '/') | url | absoluteUrl }}"/>
+  <link href="{{ page.url | htmlBaseUrl(site.url) }}" rel="self"/>
+  <link href="{{ (section.prefix + '/') | htmlBaseUrl(site.url) }}"/>
   <updated>{{ build.time | dateISO }}</updated>
   <author><name>{{ pkg.name }}</name></author>
-  <id>{{ page.url | url | absoluteUrl }}</id>
+  <id>{{ (section.prefix + '/') | htmlBaseUrl(site.url) }}</id>
   {% for item in collections[section.path] | sort(attribute='data.fruit.updated', reverse=true) %}
   {% if (item.fileSlug !== section.path) %}
   <entry>
     <title>{{ (item.data.fruit.title[section.path] or site.title)}}</title>
-    <link href="{{ item.url | url | absoluteUrl }}"/>
-    <id>{{ item.url | url | absoluteUrl }}</id>
+    <link href="{{ item.url | htmlBaseUrl(site.url) }}"/>
+    <id>{{ item.url | htmlBaseUrl(site.url) }}</id>
     <updated>{{ item.data.fruit.updated | dateISO }}</updated>
     <content type="html">{{ (item.data.fruit.content[section.path] or templateContent) | markdown }}</content>
   </entry>
