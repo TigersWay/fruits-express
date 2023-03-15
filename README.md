@@ -2,6 +2,10 @@
 
 Simple data-oriented & multi-language starter with Eleventy & TailwindCSS
 
+Dependencies:
+
+- ![@11ty/eleventy](https://img.shields.io/github/package-json/dependency-version/tigersway/fruits-express/dev/@11ty/eleventy)
+
 Demo:
 [![Netlify](https://img.shields.io/badge/Netlify--none?style=social&logo=netlify)](https://fruits-express.netlify.app)
 [![Cloudflare](https://img.shields.io/badge/Cloudflare_pages--none?style=social&logo=cloudflare)](https://fruits-express.pages.dev)
@@ -33,47 +37,43 @@ Available variables are:
 
 ### CHANGELOG
 
-**v2.4.0**
+- **v2.4.1**
+  - Eleventy v2.0.0
+  
+- **v2.4.0**
+  - Eleventy 2.0.0-canary.15
+    - `eleventy.config.js` is now the default config file
+    - the new HTML &lt;base&gt; plugin allows us to get rid of the url filter
 
-- Eleventy 2.0.0-canary.15
-  - `eleventy.config.js` is now the default config file
-  - the new HTML &lt;base&gt; plugin allows us to get rid of the url filter
-
-**v2.3.0**
-
-- Eleventy 2.0.0-canary.12 & "For-free passthrough copy"
+- **v2.3.0**
+  - Eleventy 2.0.0-canary.12 & "For-free passthrough copy"
   - [FontSource](https://fontsource.org/) is now available and useful  
-  `eleventyConfig.addPassthroughCopy({ 'node_modules/@fontsource/sarabun/files/*{latin,thai}-{400,700}*.woff2': 'css/files' });`
+    `eleventyConfig.addPassthroughCopy({ 'node_modules/@fontsource/sarabun/files/*{latin,thai}-{400,700}*.woff2': 'css/files' });`
 
-**v2.2.0**
+- **v2.2.0**
+  - Added a "Generic builder"
+  - Fix images url without CDN
 
-- Added a "Generic builder"
-- Fix images url without CDN
+- **v2.1.0**
+  - Added github-pages demo (great to check the url filter)
 
-**v2.1.0**
+- **v2.0.1**
+  - Fix Atom feed (Links & minification)
 
-- Added github-pages demo (great to check the url filter)
+- **v2.0.0**
+  - Additions & New features
+    - Mono dataset but multi-language and some light markdown
+    - New Eleventy dev-server with express-static middleware
+    - html-minifier
+    - RSS/Atom
+    - sitemap.xml
+  - Updates:
+    - Dependencies:
+      - Eleventy v2.x among others
+      - Concurrently (npm-run-all is clearly dead)
+    - Sarabun v13 (font)
+    - DataSet images to png
 
-**v2.0.1**
-
-- Fix Atom feed (Links & minification)
-
-**v2.0.0**
-
-- Additions & New features
-  - Mono dataset but multi-language and some light markdown
-  - New Eleventy dev-server with express-static middleware
-  - html-minifier
-  - RSS/Atom
-  - sitemap.xml
-- Updates:
-  - Dependencies:
-    - Eleventy v2.x among others
-    - Concurrently (npm-run-all is clearly dead)
-  - Sarabun v13 (font)
-  - DataSet images to png
-
-**v1.0.0**
-
-- Eleventy v1.x
-- TailwindCSS v3.x
+- **v1.0.0**
+  - Eleventy v1.x
+  - TailwindCSS v3.x

@@ -8,7 +8,7 @@
     "tailwindcss",
     "fontsource"
   ],
-  "version": "2.4.0",
+  "version": "2.4.1",
   "license": "MIT",
   "author": "Ben Michaud <ben@tigersway.net>",
   "scripts": {
@@ -26,27 +26,26 @@
     "upload-cloudinary": "qcu -p $npm_package_name 'site/static:images/*.jpg' 'site/_data:images/**/*'"
   },
   "devDependencies": {
-    "@11ty/eleventy": "2.0.0-canary.15",
-    "@fontsource/sarabun": "^4.5.9",
+    "@11ty/eleventy": "2.0.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
-    "@tailwindcss/typography": "^0.5.7",
-    "autoprefixer": "^10.4.12",
-    "concurrently": "^7.4.0",
-    "dayjs": "^1.11.5",
-    "dotenv": "^16.0.2",
-    "esbuild": "^0.15.9",
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "^10.4.14",
+    "concurrently": "^7.6.0",
+    "dayjs": "^1.11.7",
+    "dotenv": "^16.0.3",
+    "esbuild": "^0.17.11",
     "fast-glob": "^3.2.12",
     "html-minifier": "^4.0.0",
     "js-yaml": "^4.1.0",
     "markdown-it": "^13.0.1",
     "markdown-it-link-attributes": "^4.0.1",
-    "postcss": "^8.4.16",
-    "postcss-import": "^15.0.0",
-    "quick-cloudinary-uploader": "^1.0.3",
-    "string-kit": "^0.17.6",
-    "tailwindcss": "^3.1.8"
+    "postcss": "^8.4.21",
+    "postcss-import": "^15.1.0",
+    "quick-cloudinary-uploader": "^1.1.1",
+    "string-kit": "^0.17.8",
+    "tailwindcss": "^3.2.7"
   },
   "dependencies": {
-    "@11ty/eleventy-plugin-directory-output": "^1.0.1"
+    "@fontsource/sarabun": "^4.5.9"
   }
 }

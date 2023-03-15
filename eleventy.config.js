@@ -49,6 +49,8 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy({ 'site/static/': '.' });
   eleventyConfig.addPassthroughCopy({ 'node_modules/@fontsource/sarabun/files/*{latin,thai}-{400,700}*.woff2': 'css/files' });
   eleventyConfig.addPassthroughCopy({ 'site/_data/images/': 'images' });
+  eleventyConfig.setServerPassthroughCopyBehavior('passthrough');
+
 
   if (process.env.NODE_ENV === 'production') {
 
