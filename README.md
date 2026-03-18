@@ -37,6 +37,10 @@ Available variables are:
 
 ### CHANGELOG
 
+- **v2.4.2** (2026-03-18)
+  - Update all dependencies again, "Smart Hosters" are getting newer engines
+  - Cloudflare Pages v3
+
 - **v2.4.1**
   - Eleventy v2.0.0
   

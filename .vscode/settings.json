@@ -1,15 +1,10 @@
 {
-  "npm.scriptExplorerExclude": [
-    "^pre",
-    ":"
-  ],
+  "npm.packageManager": "bun",
+  "npm.scriptExplorerExclude": ["^pre", ":"],
   "markdownlint.config": {
     "MD001": false,
     "MD013": false,
     "MD036": false
   },
-  "cSpell.words": [
-    "cloudinary",
-    "dayjs"
-  ]
+  "cSpell.words": ["cloudinary", "dayjs", "Hosters", "sarabun", "thai"]
 }
